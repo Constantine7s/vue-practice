@@ -1,10 +1,21 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <button class="btn">Create Task</button>
+  <button @click="handleClick()" :style="{ background: color }" class="btn">
+    {{ text }}
+  </button>
 </template>
 
 <script>
 export default {
-    name: "Button",
-}
+  name: 'Button',
+  props: {
+    color: String,
+    text: String,
+  },
+  methods: {
+    handleClick() {
+      console.log('something clicked');
+    },
+  },
+};
 </script>
