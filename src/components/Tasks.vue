@@ -27,7 +27,7 @@ export default {
   border-left: 5px solid green;
 }
 .task h3 {
-  display: flex;
+  display: flex; 
   align-items: center;
   justify-content: space-between;
 }
