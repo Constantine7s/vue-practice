@@ -14,8 +14,7 @@ export default {
   },
   methods: {
     handleClick() {
-      console.log('handleClick()');
-      this.$emit('toggle-add-task');
+      this.$emit('btn-click');
     },
   },
 };
